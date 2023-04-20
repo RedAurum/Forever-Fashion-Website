@@ -1,0 +1,364 @@
+<!-- Forever Fashion, Edinburgh College Project 2023 
+    by Laura Balestrieri, 
+    Amanda Gonazalez-Santana, 
+    and Morgan Waugh 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Forever Fashion || Home</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSS Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Rufina&display=swap" rel="stylesheet">
+  <!-- CSS Personal -->
+  <link rel="stylesheet" href="./style/mystyle.css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.904.0" data-gr-ext-installed="">
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light navbar-expand-md p-2" aria-label="main menu">
+    <img id="logo" src="./images/forever_fashion_logo.svg" alt="logo of the brand">
+    <p id="text-brand" class="text-center p-1">Forever Fashion</p>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+      aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link active" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <main>
+    <div class="py-5">
+
+      <!--Header -->
+      <header class="header-container container">
+        <img id="header-image-first" src="./images/index-image1.jpg" class="header-image"
+          alt="image of a young girl wearing a second-hand outfit and holding an old fashioned camera">
+        <img src="./images/index-image2.jpg" class="header-image"
+          alt="image of a girl wearing a second-hand outfit holding an old-fashioned phone outside in a park">
+        <img id="header-image-last" src="./images/index-image3.jpg" class="header-image"
+          alt="image of a young girl looking down sitting on grass wearing a second-hand outfit">
+      </header>
+
+
+      <!-- Title -->
+      <div class="container py-5 pb-5 mt-5">
+        <h1 class="text-center pb-5">One Outfit at a time</h1>
+        <p class="text-dark text-center">Sustainable and accessible clothes.<br> Making the difference.</p>
+        <!-- Button link to shop -->
+        <div class="d-flex justify-content-center mt-4">
+          <button onclick="window.location.href = './shop.html';" class="btn-index btn-lg px-5 py-2">Shop</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rectangle Links -->
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="rectangle mb-5 py-5 px-4 bg-dark text-light">
+            <h2 class="mb-4 pb-5">The story behind</h2>
+            <br><br>
+            <p class="text-light"><a href="./about.html#story">Explore more <span class="arrow-link"
+                  aria-hidden="true">&#x27F6;</span></a></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="rectangle mb-5 py-5 px-4 bg-dark text-light">
+            <h2 class="mb-4 pb-5">Vision & Philosophy</h2>
+            <br><br>
+            <p class="text-light"><a href="./about.html#vision">Explore more <span class="arrow-link"
+                  aria-hidden="true">&#x27F6;</span></a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Shop articles -->
+      <h3 class="mt-5 pt-5 pb-5 text-dark">New Stock</h3>
+      <div class="row flex-nowrap home-container">
+        <div class="col-md-4">
+          <div class="card mb-4 p-2">
+            <img class="card-index" src="./images/man_jacket.jpg" alt="second-hand black leather jacket">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">Leather Jacket</p>
+                  <button type="button" class="btn btn-sm border-0"><img class="shop-icon" src="./images/cart.svg"
+                      alt="shopping cart"></button>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text"><span>&#163;</span> 20.99</p>
+                  <button type="button" class="btn btn-sm border-0"><img class="shop-icon" src="./images/heart.svg"
+                      alt="heart"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 p-2">
+            <img class="card-index" src="./images/dres_woman.jpg" alt="a model wearing a white summer dress">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">Summer Dress</p>
+                  <button type="button" class="btn btn-sm border-0"><img class="shop-icon" src="./images/cart.svg"
+                      alt="shopping cart"></button>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text"><span>&#163;</span> 12.99</p>
+                  <button type="button" class="btn btn-sm border-0"><img class="shop-icon" src="./images/heart.svg"
+                      alt="heart"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 p-2">
+            <img class="card-index" src="./images/kids_clothes.jpg" alt="mustard salopette trousers for kids">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">Mustard Salopette</p>
+                  <button type="button" class="btn btn-sm border-0"><img class="shop-icon" src="./images/cart.svg"
+                      alt="shopping cart"></button>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text"><span>&#163;</span> 4.89</p>
+                  <button type="button" class="btn btn-sm border-0"><img class="shop-icon" src="./images/heart.svg"
+                      alt="heart"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- More -->
+      <p class="text-dark text-center home-link"><a href="./shop.html">Explore more <span class="arrow-link"
+            aria-hidden="true">&#x27F6;</span></a></p>
+
+      <!-- Blog articles -->
+      <h3 class="mt-5 pt-5 pb-5 text-dark">Blog</h3>
+      <div class="row flex-nowrap home-container">
+        <div class="col-md-4">
+          <div class="card mb-4 p-2">
+            <img class="card-index" src="./images/blog-entry-upcycle_index.jpg"
+              alt="image of a young woman dressed up in a white summer dress">
+            <div class="card-body d-flex flex-column justify-content-between mb-1">
+              <div>
+                <div class="d-flex justify-content-between">
+                  <a href="./blog.html#blog-upcycle">
+                    <p class="card-text">10 Ideas to Upcycle your older clothes</p>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">February 10<sup>th</sup>, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 p-2">
+            <img class="card-index" src="./images/blog-entry-reuse-index.jpg"
+              alt="a woman on her knees, looking inside a box full of second-hand clothes">
+            <div class="card-body d-flex flex-column justify-content-between mb-1">
+              <div>
+                <div class="d-flex justify-content-between">
+                  <a href="./blog.html#blog-reuse">
+                    <p class="card-text">Reduce, Reuse, Recycle: How Upcycling Can Help the Planet</p>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">January 10<sup>th</sup>, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 p-2">
+            <img class="card-index" src="./images/blog-entry-grocery-index.jpg"
+              alt="a hand holding a shopping bag filled with vegetables and healthy food">
+            <div class="card-body d-flex flex-column justify-content-between mb-1">
+              <div>
+                <div class="d-flex justify-content-between">
+                  <a href="./blog.html#blog-zero-waste">
+                    <p class="card-text">Zero Waste Living: Simple Changes You Can Make Today</p>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">December 10<sup>th</sup>, 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- More -->
+      <p class="text-dark text-center home-link mb-5"><a href="./blog.html">Explore more <span class="arrow-link"
+            aria-hidden="true">&#x27F6;</span></a></p>
+
+      <!-- Join the community -->
+      <div class="container pt-5 pb-5 mt-5 mb-5">
+        <h3 class="text-center pb-5 text-dark">Join our community.</h3>
+        <p class="text-dark text-center">Be updated on our events, workshops, new products, <br> and much more.</p>
+        <!-- Button link to sign up -->
+        <div class="d-flex justify-content-center mt-4">
+          <button class="btn-index btn-lg px-5 py-2">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-5 main-background" aria-label="footer">
+    <div class="container pt-5 pb-3">
+
+      <div class="row">
+
+        <!-- About links -->
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center text-md-left">
+          <h4>ABOUT</h4>
+          <ul class="p-0 mt-5">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Story</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Values</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Sustainability</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Help links -->
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center text-md-left">
+          <h4>HELP</h4>
+          <ul class="p-0 mt-5">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Story</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Values</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Sustainability</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Other Stuff links -->
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center text-md-left">
+          <h4>OTHER STUFF</h4>
+          <ul class="p-0 mt-5">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Story</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Values</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Sustainability</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Terms of Use -->
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center text-md-left">
+          <h4>TERMS OF USE</h4>
+          <ul class="p-0 mt-5">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Story</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Values</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Sustainability</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Buttons -->
+        <div class="row mt-5">
+          <div class="col-md-12 text-center text-md-left">
+            <h4>SOCIAL MEDIA</h4>
+            <div class="social-media-buttons">
+              <a href="https://en-gb.facebook.com/" target="_blank"><img src="./images/facebook-logo.svg"
+                  alt="facebook logo"></a>
+            </div>
+            <div class="social-media-buttons">
+              <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram-logo.svg"
+                  alt="instagram logo"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="row mt-5 mb-0">
+          <div class="copyright col-md-12 text-center text-md-left">
+            <p>
+              <span aria-hidden="true">&#169; </span> Forever Fashion Inc. All rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Bootstrap 4.6 Script -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="./script/fadein.js"></script>
+</body>
+
+</html>

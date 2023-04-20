@@ -1,0 +1,807 @@
+/*------------------------------------------------------------------
+["Forever Fashion Project" for Edinburgh College, 2023]
+
+- Project:              Forever Fashion 
+- Members of the team:  Laura Balestrieri, Amanda Gonzalez-Santana, Morgan Waugh
+- Last change:          28-03-23
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[CSS Table of contents]
+
+1.0 - General CSS
+ - 1.1 - Body, titles, buttons and paragraphs
+ - 1.2 - Navbar (nav-links and effects)
+ - 1.3 - Logo and Brand
+ - 1.4 - Footer
+
+2.0 - Index 
+ - 2.1 - Style of links
+ - 2.2 - New Stock Style cards
+
+3.0 - About 
+ - 3.1 - Abut icons
+ - 3.2 - Card container and style
+ - 3.3 - Card picture style
+ - 3.4 - Card rotating effect
+
+4.0 - Shop
+ - 4.1 - Search Bar
+ - 4.2 - Catalogue and Product Cards
+ - 4.3 - Pagination
+
+5.0 - Blog
+ - 5.1 - Blog entry and avatar
+ - 5.2 - Link style 
+
+6.0 - Contact
+ - 6.1 - Form style and paragraphs
+
+7.0 - Media queries
+ - 7.1 - Smartphones
+ - 7.2 - Tablet
+
+[End of contents]
+-------------------------------------------------------------------*/
+
+/* 1.0 - General CSS */
+
+/* 1.1 - Body, titles, buttons, paragraphs */
+
+body {
+
+  background-color: #f29f050d;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+
+  font-family: 'Rufina', serif;
+  font-size: 3.5em;
+  color: #f1f1f1
+}
+
+h1 {
+
+  color: #a63841;
+
+}
+
+h2 {
+
+  font-size: 2.8em;
+
+}
+
+h3 {
+
+  font-size: 2.3em;
+
+}
+
+h4 {
+
+  font-size: 1.5em;
+
+}
+
+p {
+
+  font-size: 16pt;
+  line-height: 1.7;
+
+}
+
+.btn-index,
+.btn-contact {
+
+  color: #f1f1f1;
+  background-color: #a63841;
+  border: 1px solid #f29f0509;
+
+}
+
+.btn-index:hover,
+.btn-contact:hover {
+
+  color: #a63841;
+  background-color: #f29f0509;
+  border: 1px solid #a63841;
+
+}
+
+button:hover {
+
+  transition: 0.2s;
+  box-shadow: 0 2px 4px 0 rgba(237, 236, 179, 0.2), 0 3px 10px 0 rgba(27, 28, 22, 0.486);
+
+}
+
+button:active {
+
+  transform: translateY(4px);
+
+}
+
+
+.main-background {
+
+  background-color: #f2f0ce;
+
+}
+
+.main-background h1 {
+
+  color: #a63841
+}
+
+/* 1.2 - Navbar */
+
+nav {
+
+  background-color: #f2f0ce;
+  font-size: 16pt;
+
+}
+
+/* Navbar links basic colour */
+
+.nav-link {
+
+  color: #a63841;
+  font-size: 16pt;
+}
+
+/* Navbar links when in focus and active */
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link {
+
+  color: #a63841;
+
+}
+
+
+/* Navbar links colours on hover */
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+
+  color: #a63841;
+
+}
+
+/* Toggler border colours and small menu icon */
+
+.navbar-light .navbar-toggler {
+
+  color: #a63841;
+  border-color: #a63841;
+
+
+}
+
+.navbar-light .navbar-toggler-icon {
+
+  color: #a63841;
+  border-color: #a63841;
+
+
+}
+
+/* Hovering Navbar links */
+
+.nav-link:hover,
+.footer-link:hover {
+
+  color: #a63841;
+  text-decoration: underline;
+
+}
+
+/* Active page */
+
+.active {
+
+  font-weight: bolder;
+  text-decoration: underline;
+
+}
+
+/* 1.3 - Logo and Brand */
+
+#text-brand {
+
+  color: #a63841;
+  font-size: 20pt;
+  font-weight: 800;
+
+}
+
+#logo {
+
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+
+}
+
+/*------------------------------------------------------------------*/
+
+/* 1.4 - Footer */
+
+footer {
+
+  background-color: rgb(13, 13, 13);
+
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+.footer-link {
+
+  font-size: 14pt;
+  text-decoration: none;
+
+}
+
+footer h4,
+footer p,
+.footer-link {
+
+  color: #a63841
+}
+
+footer h4 {
+
+  font-weight: bold;
+}
+
+.social-media-buttons {
+
+  display: inline-block;
+
+}
+
+.social-media-buttons img {
+
+  width: 40px;
+
+}
+
+.copyright p {
+
+  font-size: 14pt;
+
+}
+
+/*------------------------------------------------------------------*/
+
+/* 2.0 - Index Page */
+
+.header-container {
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.header-image {
+
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(237, 236, 179, 0.2), 0 6px 20px 0 rgba(27, 28, 22, 0.486);
+
+}
+
+#header-image-first {
+
+  border-radius: 20px 0px 0px 20px;
+
+}
+
+#header-image-last {
+
+  border-radius: 0px 20px 20px 0px;
+
+}
+
+.header-image.visible {
+
+  opacity: 1;
+
+}
+
+.rectangle {
+
+  border-radius: 20px;
+
+}
+
+
+/* 2.1 - Style of links */
+.rectangle a,
+.home-container a,
+.home-link a {
+
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+
+}
+
+.home-container a,
+.home-link a {
+
+  color: #030303;
+
+}
+
+/* Underline effect on mouse hover */
+.rectangle a:hover,
+.home-container a:hover,
+.home-link a:hover {
+
+  text-decoration: underline;
+
+}
+
+/* Arrow icon next to links text */
+.arrow-link {
+
+  font-size: 1.5rem;
+
+}
+
+/* 2.2 - New Stock style */
+
+.card-index {
+
+
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(237, 236, 179, 0.2), 0 3px 10px 0 rgba(27, 28, 22, 0.486);
+
+}
+
+/*------------------------------------------------------------------*/
+
+/* 3.0 - About Page */
+
+
+/* 3.1 - About icons */
+
+.about-icon {
+
+  color: #030303;
+  width: 95px;
+  margin-bottom: 10px;
+
+}
+
+
+/* 3.2 - Card container and style */
+.flip-card {
+
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+
+}
+
+.flip-card-inner {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+
+}
+
+/* Style and Position for front and backside of card */
+.flip-card-front,
+.flip-card-back {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+}
+
+/* Text color */
+.flip-card-front {
+
+  color: black;
+
+}
+
+
+/* 3.3 - Card picture style */
+.flip-card-front img {
+
+  height: 300px;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(237, 236, 179, 0.2), 0 6px 20px 0 rgba(27, 28, 22, 0.486);
+
+}
+
+
+/* Backside of card */
+.flip-card-back {
+
+  background-color: #A63841;
+  color: white;
+  transform: rotateY(180deg);
+
+}
+
+/* 3.4 - Rotating effect on Y axis (vertical) */
+.flipped {
+
+  transform: rotateY(180deg);
+
+}
+
+/*------------------------------------------------------------------*/
+
+/* 4.0 - Shop Page */
+
+.row-colour {
+
+  background-color: rgb(255, 255, 255);
+
+}
+
+.shop-icon {
+
+  height: 25px;
+
+}
+
+
+#shop-filters,
+#shop-filters a {
+
+  color: #a63841;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.13em;
+  font-weight: bold;
+
+}
+
+/* Underline effect on mouse hover */
+#shop-filters a:hover {
+
+  text-decoration: underline;
+
+}
+
+
+/* 4.1 - Search Bar */
+
+#form-shop input {
+
+  width: auto;
+  border-radius: 25px;
+  box-shadow: 2px 4px #a6384173;
+  transition: box-shadow 0.2s ease-in-out;
+
+}
+
+#form-shop input:focus-within {
+
+  box-shadow: none;
+
+}
+
+.search-icon {
+
+  background: transparent;
+  border: none;
+
+}
+
+.search-icon i {
+
+  font-size: 1.5em;
+
+}
+
+
+/* 4.2 - Catalogue and Product Cards */
+
+.shop-catalogue {
+
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.card-body p {
+
+  color: #030303;
+
+}
+
+.card {
+
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+
+}
+
+.shop-card {
+
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(237, 236, 179, 0.2), 0 6px 20px 0 rgba(27, 28, 22, 0.486);
+
+}
+
+/* 4.3 - Pagination colours*/
+
+.pagination {
+
+  margin: 0;
+  padding-bottom: 50px;
+
+}
+
+.pagination a {
+
+  color: #a63841;
+
+}
+
+.pagination a:hover {
+
+  color: #f2f0ce;
+  font-weight: bold;
+  transition: 0.2s;
+
+}
+
+.page-link {
+
+  background-color: #f2f0ce;
+  border: none;
+
+}
+
+.page-link:hover {
+
+
+  background-color: #a63841;
+  transition: 0.2s;
+}
+
+/*------------------------------------------------------------------*/
+
+/* 5.0 - Blog Page */
+
+/* 5.1 - Blog entry pictures and avatar */
+
+.gradient-bg {
+
+  background-color: #f2f0cec2;
+
+}
+
+.blog-entry {
+
+  background-color: #f2f0ce;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.blog-entry-text {
+
+  font-weight: bold;
+
+}
+
+#blog-upcycle {
+
+  background-image: url("/images/blog-entry-upcycle.jpg");
+
+}
+
+#blog-reuse {
+
+  background-image: url("/images/blog-entry-reuse.jpg");
+
+}
+
+
+#blog-zero-waste {
+
+  background-image: url("/images/blog-entry-grocery.jpg");
+
+}
+
+.blog-avatar {
+
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+  border: 2px solid #a63841;
+  box-shadow: 0 4px 8px 0 rgba(246, 67, 31, 0.2), 0 6px 20px 0 rgba(27, 28, 22, 0.486);
+
+}
+
+/* 5.2 - Blog entry link hovering */
+
+.blog-entry a:hover {
+
+  font-weight: bold;
+  transition: 0.2s;
+
+}
+
+
+/*------------------------------------------------------------------*/
+
+/* 6.0 - Contact Page */
+
+/* 6.1 - Form style */
+
+.contact-form {
+
+  border: 1px solid #030303;
+
+}
+
+.form-container h2 {
+
+  font-size: 3.0em;
+  color: #030303;
+
+}
+
+/* Email link */
+
+.form-container a {
+
+  color: #a63841;
+  text-decoration: underline;
+
+}
+
+.form-container a:hover {
+
+  color: #a63841;
+  font-weight: bold;
+  transition: 0.2s;
+
+}
+
+/* Paragraphs Style */
+
+.details p,
+a {
+
+  border-color: #030303;
+  font-size: 18pt;
+
+}
+
+
+/*------------------------------------------------------------------*/
+
+/* 7.0 - Mediaqueries */
+
+/* 7.1 - Mobile Phone */
+
+/* Shop - Search Bar and Icon Position*/
+
+@media screen and (max-width: 576px) {
+  .search-icon {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -44px;
+
+  }
+
+  .search-icon i {
+    font-size: 24px;
+
+  }
+
+  /* Contact */
+  .form-container {
+    width: 100%;
+  }
+
+}
+
+
+/* 7.2 - Tablet */
+
+/* Shop.html - Search Bar and Icon Position*/
+
+@media screen and (max-width: 767px) {
+
+  #form-shop .input-group-append {
+
+    margin-left: 87%;
+    margin-right: 10px;
+  }
+
+
+  /* index.html - do not display scrollbar*/
+
+  .home-container {
+
+    overflow-x: hidden;
+
+  }
+
+
+  /* Index.html - do not display scrollbar
+   but Show scrollbar when on bigger screens */
+
+  .home-container {
+
+    overflow-x: scroll;
+
+  }
+
+  .home-container::-webkit-scrollbar {
+
+    height: 8px;
+
+  }
+
+  .home-container::-webkit-scrollbar-thumb {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+
+  }
+
+}
+
+/* Blog - do not show blog entries images*/
+
+@media screen and (max-width: 850px) {
+
+  #blog-upcycle {
+
+    background-image: none;
+
+  }
+
+  #blog-reuse {
+
+    background-image: none;
+
+  }
+
+
+  #blog-zero-waste {
+
+    background-image: none;
+
+  }
+
+
+}

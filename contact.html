@@ -1,0 +1,245 @@
+<!-- Forever Fashion, Edinburgh College Project 2023 
+    by Laura Balestrieri, 
+    Amanda Gonazalez-Santana, 
+    and Morgan Waugh 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Forever Fashion || Contact</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSS Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Rufina&display=swap" rel="stylesheet">
+  <!-- CSS Personal -->
+  <link rel="stylesheet" href="./style/mystyle.css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.904.0" data-gr-ext-installed="">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light navbar-expand-md p-2" aria-label="main menu">
+    <img id="logo" src="./images/forever_fashion_logo.svg" alt="logo of the brand">
+    <p id="text-brand" class="text-center p-1">Forever Fashion</p>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+      aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <main>
+    <div class="album py-5">
+      <div class="container">
+
+        <!-- Title and Image -->
+        <div class="position-relative">
+          <img src="./images/contact-image.jpg" class="img-fluid" alt="Image">
+          <div class="position-absolute top-0 start-0">
+            <h1 class="text-right pb-5">Connect <br> with <br> us.</h1>
+          </div>
+        </div>
+
+        <!-- Column Form -->
+        <div class="row mt-5">
+
+          <div class="col-sm-6">
+            <!-- Form -->
+            <form class="contact-form was-validated m-1 p-5" action="contact.php" method="POST">
+              <div class="form-row">
+                <div class="mb-3 pb-3">
+                  <label for="validateName">Full name</label>
+                  <input type="text" class="form-control is-invalid" id="validateName" placeholder="John Smith"
+                    required>
+                </div>
+                <div class="mb-3 pb-3">
+                  <label for="validateEmail">Email</label>
+                  <input type="email" class="form-control is-invalid" id="validateEmail"
+                    placeholder="johnsmith@example.com" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="mb-3 pb-5">
+                  <label for="validationTextarea">Text area</label>
+                  <textarea class="form-control is-invalid" id="validationTextarea"
+                    placeholder="Required example text area" required></textarea>
+                </div>
+              </div>
+              <div class="d-flex mt-4">
+                <button class="btn btn-contact btn-lg px-5 py-2" name="submit" type="submit">Send your message</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Contact Details -->
+          <div class="form-container col-sm-6 details mt-sm-5 p-sm-5">
+            <!-- Email Details -->
+            <div class="mt-5 mb-3">
+              <p><b>Contact</b></p>
+              <a href="mailto:hi.world@email.com">hi.world@email.com</a>
+            </div>
+
+            <!-- Address Details -->
+            <div class="mt-5 mb-3">
+              <p><b>Based In</b></p>
+              <p>EH1 5AC</p>
+              <p>Edinburgh, United Kingdom</p>
+            </div>
+
+            <!-- Buttons Details -->
+            <div class="social-media-buttons">
+              <a href="https://en-gb.facebook.com/" target="_blank"><img src="./images/facebook-logo.svg"
+                  alt="facebook logo"></a>
+            </div>
+            <div class="social-media-buttons">
+              <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram-logo.svg"
+                  alt="instagram logo"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="mt-5 main-background" aria-label="footer">
+    <div class="container pt-5 pb-3">
+
+      <div class="row">
+
+        <!-- About links -->
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center text-md-left">
+          <h4>ABOUT</h4>
+          <ul class="p-0 mt-5">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Story</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Values</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Sustainability</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Help links -->
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center text-md-left">
+          <h4>HELP</h4>
+          <ul class="p-0 mt-5">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Story</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Values</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Sustainability</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Other Stuff links -->
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center text-md-left">
+          <h4>OTHER STUFF</h4>
+          <ul class="p-0 mt-5">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Story</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Values</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Sustainability</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Terms of Use -->
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center text-md-left">
+          <h4>TERMS OF USE</h4>
+          <ul class="p-0 mt-5">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Story</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Values</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Sustainability</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Buttons -->
+        <div class="row mt-5">
+          <div class="col-md-12 text-center text-md-left">
+            <h4>SOCIAL MEDIA</h4>
+            <div class="social-media-buttons">
+              <a href="https://en-gb.facebook.com/" target="_blank"><img src="./images/facebook-logo.svg"
+                  alt="facebook logo"></a>
+            </div>
+            <div class="social-media-buttons">
+              <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram-logo.svg"
+                  alt="instagram logo"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="row mt-5 mb-0">
+          <div class="copyright col-md-12 text-center text-md-left">
+            <p>
+              <span aria-hidden="true">&#169; </span> Forever Fashion Inc. All rights Reserved.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap 4.6 Script -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

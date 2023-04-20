@@ -1,0 +1,415 @@
+<!-- Forever Fashion, Edinburgh College Project 2023 
+    by Laura Balestrieri, 
+    Amanda Gonazalez-Santana, 
+    and Morgan Waugh 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Forever Fashion || Shop</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSS Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Rufina&display=swap" rel="stylesheet">
+  <!-- CSS Personal -->
+  <link rel="stylesheet" href="./style/mystyle.css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.904.0" data-gr-ext-installed="">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light navbar-expand-md p-2" aria-label="main menu">
+    <img id="logo" src="./images/forever_fashion_logo.svg" alt="logo of the brand">
+    <p id="text-brand" class="text-center p-1">Forever Fashion</p>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+      aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <main>
+    <div class="main-background">
+      <div class="album py-5">
+        <div class="container">
+          <h1 class="text-center pb-5">Let's change outfit...</h1>
+
+          <!-- Search Bar-->
+          <form id="form-shop" class="d-flex justify-content-center">
+            <div class="input-group p-2">
+              <input type="text" class="form-control form-control-lg" id="search-function"
+                aria-describedby="search-function" placeholder="Find what you need...">
+              <div class="input-group-append">
+                <span class="input-group-text search-icon"><i class="fa fa-search"></i></span>
+              </div>
+            </div>
+          </form>
+
+          <!-- Filters -->
+          <ul id="shop-filters" class="text-center mt-5 mb-5 d-flex flex-wrap justify-content-center">
+            <li class="px-3"><a href="#">Men</a></li>
+            <li class="px-3"><a href="#">Women</a></li>
+            <li class="px-3"><a href="#">Kids</a></li>
+            <li class="px-3"><a href="#">All</a></li>
+          </ul>
+        </div>
+
+
+        <!-- Shop Catalogue -->
+        <div class="shop-catalogue">
+
+          <!-- First section -->
+          <div class="row row-colour pt-5 px-lg-5">
+            <div class="col-md-4" data-category="women">
+              <div class="card mb-4 p-3">
+                <img class="shop-card" src="./images/woman_glasses.jpg"
+                  alt="close-up of pearl rounded glasses for women">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text">Retro Glasses</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Cart"><img class="shop-icon"
+                          src="./images/cart.svg" alt="shopping cart"></button>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text"><span>&#163;</span> 6.99</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Wishlist"><img
+                          class="shop-icon" src="./images/heart.svg" alt="heart"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-category="women">
+              <div class="card mb-4 p-3">
+                <img class="shop-card" src="./images/woman_hat.jpg" alt="a model wearing a white hat for women">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text">Nouveau Hat</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Cart"><img class="shop-icon"
+                          src="./images/cart.svg" alt="shopping cart"></button>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text"><span>&#163;</span> 4.99</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Wishlist"><img
+                          class="shop-icon" src="./images/heart.svg" alt="heart"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-category="kids">
+              <div class="card mb-4 p-3">
+                <img class="shop-card" src="./images/kids_boots.jpg" alt="second-hand black leather kids boots">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text">Leather Boots</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Cart"><img class="shop-icon"
+                          src="./images/cart.svg" alt="shopping cart"></button>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text"><span>&#163;</span> 10.59</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Wishlist"><img
+                          class="shop-icon" src="./images/heart.svg" alt="heart"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second section -->
+          <div class="row row-colour px-lg-5">
+            <div class="col-md-4" data-category="men">
+              <div class="card mb-4 p-3">
+                <img class="shop-card" src="./images/man_jacket.jpg" alt="second-hand black leather jacket">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text">Leather Jacket</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Cart"><img class="shop-icon"
+                          src="./images/cart.svg" alt="shopping cart"></button>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text"><span>&#163;</span> 20.99</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Wishlist"><img
+                          class="shop-icon" src="./images/heart.svg" alt="heart"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-category="women">
+              <div class="card mb-4 p-3">
+                <img class="shop-card" src="./images/coat_woman.jpg" alt="a model wearing fluffy black coat for women">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text">Fancy Coat</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Cart"><img class="shop-icon"
+                          src="./images/cart.svg" alt="shopping cart"></button>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text"><span>&#163;</span> 13.99</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Wishlist"><img
+                          class="shop-icon" src="./images/heart.svg" alt="heart"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-category="kids">
+              <div class="card mb-4 p-3">
+                <img class="shop-card" src="./images/kids_clothes.jpg" alt="mustard salopette trousers for kids">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text">Mustard Salopette</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Cart"><img class="shop-icon"
+                          src="./images/cart.svg" alt="shopping cart"></button>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text"><span>&#163;</span> 4.89</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Wishlist"><img
+                          class="shop-icon" src="./images/heart.svg" alt="heart"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third section -->
+          <div class="row row-colour px-lg-5">
+            <div class="col-md-4" data-category="men">
+              <div class="card mb-4 p-3">
+                <img class="shop-card" src="./images/denim_man.jpg" alt="a male model wearing a blue denim jacket">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text">Denim Jacket</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Cart"><img class="shop-icon"
+                          src="./images/cart.svg" alt="shopping cart"></button>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text"><span>&#163;</span> 19.99</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Wishlist"><img
+                          class="shop-icon" src="./images/heart.svg" alt="heart"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-category="women">
+              <div class="card mb-4 p-3">
+                <img class="shop-card" src="./images/dres_woman.jpg" alt="a model wearing a white summer dress">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text">Summer Dress</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Cart"><img class="shop-icon"
+                          src="./images/cart.svg" alt="shopping cart"></button>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text"><span>&#163;</span> 12.99</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Wishlist"><img
+                          class="shop-icon" src="./images/heart.svg" alt="heart"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-category="kids">
+              <div class="card mb-4 p-3">
+                <img class="shop-card" src="./images/kids_glasses.jpg"
+                  alt="kids glasses with colourful printed flowers">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text">Flowers Sunglasses</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Cart"><img class="shop-icon"
+                          src="./images/cart.svg" alt="shopping cart"></button>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text"><span>&#163;</span> 3.99</p>
+                      <button type="button" class="btn btn-sm border-0" title="Add to your Wishlist"><img
+                          class="shop-icon" src="./images/heart.svg" alt="heart"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <ul class="pagination justify-content-center">
+              <li class="page-item" title="Go to the previous page">
+                <a class="page-link" href="#">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="./shop.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item" title="Go to the next page">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-background" aria-label="footer">
+    <div class="container pt-5 pb-3">
+
+      <div class="row">
+
+        <!-- About links -->
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center text-md-left">
+          <h4>ABOUT</h4>
+          <ul class="p-0 mt-5">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Story</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Values</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Sustainability</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Help links -->
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center text-md-left">
+          <h4>HELP</h4>
+          <ul class="p-0 mt-5">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Story</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Values</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Sustainability</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Other Stuff links -->
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center text-md-left">
+          <h4>OTHER STUFF</h4>
+          <ul class="p-0 mt-5">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Story</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Values</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Sustainability</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Terms of Use -->
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center text-md-left">
+          <h4>TERMS OF USE</h4>
+          <ul class="p-0 mt-5">
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Story</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Values</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Our Sustainability</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Buttons -->
+        <div class="row mt-5">
+          <div class="col-md-12 text-center text-md-left">
+            <h4>SOCIAL MEDIA</h4>
+            <div class="social-media-buttons">
+              <a href="https://en-gb.facebook.com/" target="_blank"><img src="./images/facebook-logo.svg"
+                  alt="facebook logo"></a>
+            </div>
+            <div class="social-media-buttons">
+              <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram-logo.svg"
+                  alt="instagram logo"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="row mt-5 mb-0">
+          <div class="copyright col-md-12 text-center text-md-left">
+            <p>
+              <span aria-hidden="true">&#169;</span> Forever Fashion Inc. All rights Reserved.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Bootstrap 4.6 Script -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- Original Script -->
+  <script src="./script/shopfilter.js"></script>
+
+</body>
+
+</html>
